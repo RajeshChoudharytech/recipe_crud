@@ -1,0 +1,86 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 324-769-775
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:42] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:42] "GET /login?next=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:44] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:56] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:58] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:20:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:21:49] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:21:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:02] "[32mPOST /register HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:10] "GET /recipe/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:12] "[32mGET /recipe/1/edit HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:17] "GET /recipe/create HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:29] "[32mPOST /recipe/create HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:31] "GET /recipe/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:32] "GET /recipe/3/edit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:40] "[32mPOST /recipe/3/edit HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:40] "GET /recipe/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+ERROR:root:An error occurred: 405 Method Not Allowed: The method is not allowed for the requested URL.
+Traceback (most recent call last):
+  File "/home/developer/Desktop/projects/Flask projects/flaskenv/lib/python3.8/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/developer/Desktop/projects/Flask projects/flaskenv/lib/python3.8/site-packages/flask/app.py", line 854, in dispatch_request
+    self.raise_routing_exception(req)
+  File "/home/developer/Desktop/projects/Flask projects/flaskenv/lib/python3.8/site-packages/flask/app.py", line 463, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+  File "/home/developer/Desktop/projects/Flask projects/flaskenv/lib/python3.8/site-packages/flask/ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "/home/developer/Desktop/projects/Flask projects/flaskenv/lib/python3.8/site-packages/werkzeug/routing/map.py", line 626, in match
+    raise MethodNotAllowed(valid_methods=list(e.have_match_for)) from None
+werkzeug.exceptions.MethodNotAllowed: 405 Method Not Allowed: The method is not allowed for the requested URL.
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:47] "[35m[1mGET /recipe/3/delete HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:47] "GET /recipe/3/delete?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:47] "GET /recipe/3/delete?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:47] "GET /recipe/3/delete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:22:47] "[36mGET /recipe/3/delete?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/developer/Desktop/projects/Flask projects/recipe_app/app/routes.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 324-769-775
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:05] "[31m[1mGET /recipe/3/delete HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:10] "[32mGET /recipe/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:10] "GET /login?next=/recipe/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:12] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:16] "GET /recipe/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:18] "[31m[1mGET /recipe/3/delete HTTP/1.1[0m" 405 -
+INFO:werkzeug: * Detected change in '/home/developer/Desktop/projects/Flask projects/recipe_app/app/routes.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 324-769-775
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:41] "[32mGET /recipe/3/delete HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:42] "GET /login?next=/recipe/3/delete HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:46] "GET /recipe/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:48] "[32mGET /recipe/3/delete HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Apr/2024 16:36:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/home/developer/Desktop/projects/Flask projects/recipe_app/tests/test_routes.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 324-769-775
+INFO:werkzeug: * Detected change in '/home/developer/Desktop/projects/Flask projects/recipe_app/tests/test_routes.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 324-769-775

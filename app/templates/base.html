@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Recipe App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            {% if current_user.is_authenticated %}
+                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% else %}
+                <li><a href="{{ url_for('login') }}">Login</a></li>
+                <li><a href="{{ url_for('register') }}">Register</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    <div class="content">
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flash-messages">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

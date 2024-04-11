@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Create Recipe</h1>
+    <form method="post">
+        {{ form.hidden_tag() }}
+        <p>Title: {{ form.title }}</p>
+        <p>Description: {{ form.description }}</p>
+        <p>Ingredients: {{ form.ingredients }}</p>
+        <p>Instructions: {{ form.instructions }}</p>
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
